@@ -1,24 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .gradient{
     background-image: linear-gradient(to right, rgb(33, 130, 239), rgb(12, 52, 168));
 }
-.nav-list ul .study{
-    background-color: aqua;
-    content: "";
-    width: 10%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: black;
+a{
+    position: relative;
 }
-.study::after{
-    content: "";
-    width: 10%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: black;
-    /* animation: move 1s ease-in-out ; */
+a::after{
+    content: " ";
+	position: absolute;
+	background-color: blue;
+	height: 0.5px;
+	width: 100%;
+	left: 0;
+	bottom: -5px;
+	transition: 0.3s ease;
+	transform: scale(0,1);
+}
+a:hover::after{
+    transform: scale(1,1);
 }
 

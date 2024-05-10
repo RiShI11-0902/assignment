@@ -4,6 +4,9 @@ import { e, g, x, y, h } from '../assets'
 import "../index.css"
 
 export const Main = () => {
+
+    // const show = ()=>
+
     return (
         <div className="max-w-screen-xl  mx-auto px-4">
             <div className="py-10">
@@ -20,16 +23,32 @@ export const Main = () => {
                     <p className='text-3xl text-blue-950 font-semibold'>Relations and Functions (Mathematics)</p>
                 </div>
                 <div className="nav-list w-fit max-w-md mx-auto">
-                    <ul className=' grid grid-cols-3 md:flex md:flex-row space-x-5 text-2xl'>
+
+                <ul class=" grid grid-cols-3 md:flex md:flex-row space-x-5 text-2xl">
+                    <li className="font-bold text-blue-800 cursor-pointer "> <a href="#">Study</a></li>
+                    <li className="font-bold text-blue-800 cursor-pointer "><a href="#">Quiz</a></li>
+                    <li className="font-bold text-blue-800 cursor-pointer "><a href="#">Test</a></li>
+                    <li className="font-bold text-blue-800 cursor-pointer "><a href="#">Game</a></li>
+                    <li className="font-bold text-blue-800 cursor-pointer "><a href="#">Other</a></li>
+                </ul>
+
+                    {/* <ul className=' grid grid-cols-3 md:flex md:flex-row space-x-5 text-2xl'>
                         <li>
-                            <p className='font-bold text-blue-800 cursor-pointer'>Study</p>
-                            <div className='h-0.5 mt-1 bg-blue-950 w-full'></div>
+                            <a href='/' className='font-bold text-blue-800 cursor-pointer'>Study</a>
                         </li>
-                        <li className='font-bold text-blue-800 cursor-pointer'>Quiz</li>
-                        <li className='font-bold text-blue-800 cursor-pointer'>Test</li>
-                        <li className='font-bold text-blue-800 cursor-pointer'>Game</li>
-                        <li className='font-bold text-blue-800 cursor-pointer'>Other</li>
-                    </ul>
+                        <li className='font-bold text-blue-800 cursor-pointer'>
+                            <a href='/' className='font-bold text-blue-800 cursor-pointer'>Quiz</a>
+                        </li>
+                        <li className='font-bold text-blue-800 cursor-pointer'>
+                            <a href='/' className='font-bold text-blue-800 cursor-pointer'>Test</a>
+                        </li>
+                        <li className='font-bold text-blue-800 cursor-pointer'>
+                            <a href='/' className='font-bold text-blue-800 cursor-pointer'>Game</a>
+                        </li>
+                        <li className='font-bold text-blue-800 cursor-pointer'>
+                            <a href='/' className='font-bold text-blue-800 cursor-pointer'>Other</a>
+                        </li>
+                    </ul> */}
                 </div>
                 <div className="box mt-3">
                     <div className="mainText w-full max-w-md mx-auto py-28 px-8 rounded-2xl gradient relative">
@@ -73,8 +92,8 @@ export const Main = () => {
                     <p className='text-3xl font-bold'>FAQ</p>
                     <div className="questionBox mt-3 space-y-3">
                         <div className="q1 w-[100%] md:w-[60%] flex text-sm rounded-lg justify-between items-center p-3 border border-2 border-blue-500">
-                           <p>Can education flashcards be used for all age groups?</p> 
-                           <img className='rotate-90' src={arrow} alt="Arrow" />
+                            <p>Can education flashcards be used for all age groups?</p>
+                            <img className='rotate-90' src={arrow} alt="Arrow" />
                         </div>
                         <div className="q2 w-[100%] md:w-[60%] flex text-sm rounded-lg justify-between items-center p-3 border border-2 border-blue-500">
                             <p>How do education flashcards work?</p>
