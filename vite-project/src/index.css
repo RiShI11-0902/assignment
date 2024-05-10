@@ -1,0 +1,24 @@
+.gradient{
+    background-image: linear-gradient(to right, rgb(33, 130, 239), rgb(12, 52, 168));
+}
+.nav-list ul .study{
+    background-color: aqua;
+    content: "";
+    width: 10%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+}
+.study::after{
+    content: "";
+    width: 10%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    /* animation: move 1s ease-in-out ; */
+}
+
